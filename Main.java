@@ -57,23 +57,28 @@ public class Main extends Filtro {
             File ruta = new File(directorio);
             System.out.println("Tu directorio es " + ruta);
 
-            System.out.println("--CARACTERISTICAS DE INTERES DEL DIRECTORIO--");
-            System.out.println(ruta.getName());
-            System.out.println(ruta.getPath());
-            System.out.println(ruta.getAbsolutePath());
-            System.out.println(ruta.exists());
-            System.out.println(ruta.canWrite());
-            System.out.println(ruta.canRead());
-            System.out.println(ruta.isFile());
-            System.out.println(ruta.isDirectory());
-            System.out.println(ruta.isAbsolute());
-            System.out.println(ruta.length());
-            System.out.println(ruta.mkdir());
-            System.out.println(ruta.delete());
-            System.out.println(ruta.getParent());
+            if (ruta.exists()){
+                System.out.println("La ruta existe ! ");
+                System.out.println("--CARACTERISTICAS DE INTERES DEL DIRECTORIO--");
+                System.out.println(ruta.getName());
+                System.out.println(ruta.getPath());
+                System.out.println(ruta.getAbsolutePath());
+                System.out.println(ruta.exists());
+                System.out.println(ruta.canWrite());
+                System.out.println(ruta.canRead());
+                System.out.println(ruta.isFile());
+                System.out.println(ruta.isDirectory());
+                System.out.println(ruta.isAbsolute());
+                System.out.println(ruta.length());
+                System.out.println(ruta.mkdir());
+                System.out.println(ruta.delete());
+                System.out.println(ruta.getParent());
+            }else {
+                System.out.println("La ruta no existe");
+            }
 
-            System.out.println("¿EXISTE EL DIRECTORIO?");
-            System.out.println(ruta.exists());
+
+
         }
 
         /* ACTIVIDAD 4 */
